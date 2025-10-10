@@ -453,8 +453,8 @@ else:  # "📖 Data Storytelling"
     fig.update_layout(height=600)
     st.plotly_chart(fig, use_container_width=True)
     
-    # Story Chapter 3: The Underdog Stories
-    st.subheader("📚 Chapter 3: Underdog Nations and Breakthrough Moments")
+    # Story Chapter 3: Small Countries That Did Great
+    st.subheader("📚 Chapter 3: Small Countries That Surprised Everyone")
     
     # Find countries with significant improvement
     recent_performance = df[df['year'] >= 2000].groupby('country')['total'].sum()
@@ -473,10 +473,18 @@ else:  # "📖 Data Storytelling"
         improvement_yearly = improvement_data.groupby(['year', 'country'])['total'].sum().reset_index()
         
         fig = px.bar(improvement_yearly, x='year', y='total', color='country',
-                    title="Breakthrough Nations: Dramatic Olympic Improvements",
+                    title="Countries That Got Much Better at Olympics",
                     barmode='group')
         fig.update_layout(height=500)
         st.plotly_chart(fig, use_container_width=True)
+        
+        st.markdown("""
+        **📊 What This Shows:**
+        - Some countries that were not good before became much better
+        - These countries worked hard and invested money in sports
+        - Small countries can also win medals if they try hard
+        - It shows that any country can improve with proper planning
+        """)
     
     # Final Story Summary
     st.subheader("🎯 Story Conclusion: Key Takeaways")
