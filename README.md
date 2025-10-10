@@ -181,9 +181,7 @@ This project presents an interactive data storytelling experience exploring Olym
 
 Experience the interactive Olympic data storytelling application:
 
-**🌐 [Launch Application](https://your-streamlit-app-url.com)**
-
-*Note: Replace with actual deployment URL when available*
+**🌐 [Launch Application](https://aryan-gupta-dv.streamlit.app/)**
 
 ---
 
